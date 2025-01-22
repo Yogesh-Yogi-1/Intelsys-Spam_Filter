@@ -18,8 +18,6 @@
 (for both model's program and front-end's program)
 
 # OUTPUT:
-
-(include the screenshots of accuracy score, confusion matrix & classification report)
-(include the screenshot of the working User Interface)
+![Screenshot 2025-01-22 205931](https://github.com/user-attachments/assets/26ace7e6-a99e-4c52-b4fb-5b58763c24ff)
 
 # RESULT:
