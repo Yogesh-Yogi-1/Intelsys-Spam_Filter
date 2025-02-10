@@ -6,7 +6,7 @@
 (2 to 3 lines is enough)
 
 # ML ALGORITHM USED:
-(mention which ML algorithm you have used to do this model. Eg: Naive Bayes)
+NAIVE BAYES
 (include how the model basically works)
 
 # TECHNOLOGY USED FOR BUILDING THE FRONT-END:
