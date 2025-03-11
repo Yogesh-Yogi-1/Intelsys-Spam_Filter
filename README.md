@@ -158,13 +158,13 @@ st.button("Classify Email"): This creates a button that the user can click to cl
 
 When the button is clicked, the app:
 
-  Checks if the user has entered email content.
+      Checks if the user has entered email content.
 
-  If content is provided, it calls classify_email with the model and vectorizer to predict the email's classification.
+      If content is provided, it calls classify_email with the model and vectorizer to predict the email's classification.
   
-  The result is displayed to the user, telling them if the email is spam or ham.
+      The result is displayed to the user, telling them if the email is spam or ham.
 
-  If no content is entered, the app asks the user to provide email content.
+      If no content is entered, the app asks the user to provide email content.
 
 ### 7. File Upload Option
 ```
@@ -188,13 +188,13 @@ st.file_uploader: This creates a file upload button that allows users to upload 
 
 After the user uploads a file:
 
-  The app reads the file into a pandas DataFrame using pd.read_csv.
+      The app reads the file into a pandas DataFrame using pd.read_csv.
 
-  If the file contains a column named Message (which is expected to contain the email text), the app iterates through all emails in that column and classifies them as spam or ham.
+      If the file contains a column named Message (which is expected to contain the email text), the app iterates through all emails in that column and classifies them as spam or ham.
 
-  For each email, the app displays the content of the email and the classification result.
+      For each email, the app displays the content of the email and the classification result.
 
-  If the file doesn’t have a Message column, it shows a warning.
+      If the file doesn’t have a Message column, it shows a warning.
 
 ### 8. Running the App
 ```
@@ -228,10 +228,10 @@ The app will predict the classification of each email and display the result to 
 ![Screenshot 2025-01-22 205931](https://github.com/user-attachments/assets/26ace7e6-a99e-4c52-b4fb-5b58763c24ff)
 
 # RESULT:
-Accuracy: 98.5% — The model is doing a great job, correctly predicting spam and ham emails almost 99% of the time.
+i.Accuracy: 98.5% — The model is doing a great job, correctly predicting spam and ham emails almost 99% of the time.
 
-Confusion Matrix: The majority of spam emails are correctly identified as spam, and most ham emails are accurately classified as ham.
+ii.Confusion Matrix: The majority of spam emails are correctly identified as spam, and most ham emails are accurately classified as ham.
 
-Classification Report: Precision and recall for both spam and ham are high, with the model's F1-scores reflecting its solid performance in both categories.
+iii.Classification Report: Precision and recall for both spam and ham are high, with the model's F1-scores reflecting its solid performance in both categories.
 
 This is the basic result you’d get when you run the classifier and evaluate it on a dataset. It's a strong result if you’re working with real-world email data—98.5% accuracy is a good performance for spam classification!
