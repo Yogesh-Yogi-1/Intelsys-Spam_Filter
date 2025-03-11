@@ -57,11 +57,11 @@ Imagine you have an email saying:
 
 When you input this into the program, it runs through these steps:
 
-i. The email text is passed through CountVectorizer, which converts it into a bunch of numbers based on word frequency.
+**i.** The email text is passed through CountVectorizer, which converts it into a bunch of numbers based on word frequency.
 
-ii. The trained Naive Bayes model looks at these numbers and compares them to what it learned from the training data.
+**ii.** The trained Naive Bayes model looks at these numbers and compares them to what it learned from the training data.
 
-iii. The model predicts: spam! (Because words like "won" and "lottery" are often associated with spam messages).
+**iii.** The model predicts: spam! (Because words like "won" and "lottery" are often associated with spam messages).
 
 Now, let’s say you enter a regular email like:
 
