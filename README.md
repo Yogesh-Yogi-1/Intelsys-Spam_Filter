@@ -158,13 +158,13 @@ st.button("Classify Email"): This creates a button that the user can click to cl
 
 When the button is clicked, the app:
 
-      Checks if the user has entered email content.
+1. Checks if the user has entered email content.
 
-      If content is provided, it calls classify_email with the model and vectorizer to predict the email's classification.
+2. If content is provided, it calls classify_email with the model and vectorizer to predict the email's classification.
   
-      The result is displayed to the user, telling them if the email is spam or ham.
+3. The result is displayed to the user, telling them if the email is spam or ham.
 
-      If no content is entered, the app asks the user to provide email content.
+4. If no content is entered, the app asks the user to provide email content.
 
 ### 7. File Upload Option
 ```
@@ -188,13 +188,13 @@ st.file_uploader: This creates a file upload button that allows users to upload 
 
 After the user uploads a file:
 
-      The app reads the file into a pandas DataFrame using pd.read_csv.
+1. The app reads the file into a pandas DataFrame using pd.read_csv.
 
-      If the file contains a column named Message (which is expected to contain the email text), the app iterates through all emails in that column and classifies them as spam or ham.
+2. If the file contains a column named Message (which is expected to contain the email text), the app iterates through all emails in that column and classifies them as spam or ham.
 
-      For each email, the app displays the content of the email and the classification result.
+3. For each email, the app displays the content of the email and the classification result.
 
-      If the file doesn’t have a Message column, it shows a warning.
+4. If the file doesn’t have a Message column, it shows a warning.
 
 ### 8. Running the App
 ```
