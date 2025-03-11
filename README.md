@@ -2,9 +2,7 @@
 ## FilterFlux
 
 # BRIEF EXPLANATION ABOUT THE WORKING MODEL:
-(include a very short explanation of your won on how your model works)
-(2 to 3 lines is enough)
-
+The model uses a **Naive Bayes classifier**, which is trained on a dataset of labeled emails (spam or ham). It converts email content into numerical features using **CountVectorizer**, then predicts whether a given email is spam or ham based on learned patterns from the training data.
 # ML ALGORITHM USED:
 NAIVE BAYES
 Naive Bayes is a family of probabilistic algorithms based on Bayes' Theorem, often used for classification tasks. It's called "naive" because it assumes that all features (or attributes) are independent, which is a simplifying assumption that is rarely true in real-world data. Despite this assumption, Naive Bayes classifiers often perform surprisingly well in practice, particularly for text classification tasks like spam filtering, sentiment analysis, and document categorization.
