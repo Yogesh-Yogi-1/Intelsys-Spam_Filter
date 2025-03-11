@@ -1,5 +1,5 @@
 # TITLE:
-## FilterFlux
+## "FilterFlux"
 
 # BRIEF EXPLANATION ABOUT THE WORKING MODEL:
 The model uses a **Naive Bayes classifier**, which is trained on a dataset of labeled emails (spam or ham). It converts email content into numerical features using **CountVectorizer**, then predicts whether a given email is spam or ham based on learned patterns from the training data.
