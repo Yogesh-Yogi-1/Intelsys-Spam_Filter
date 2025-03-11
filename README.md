@@ -71,11 +71,11 @@ The process is the same, but this time the model is likely to predict ham, since
 
 ### Why It’s Cool:
 
-1. Speed: Once the model is trained, it’s super quick at making predictions on new emails.
+**1. Speed**: Once the model is trained, it’s super quick at making predictions on new emails.
 
-2. Simplicity: The Naive Bayes algorithm is straightforward but surprisingly effective for text classification tasks.
+**2. Simplicity**: The Naive Bayes algorithm is straightforward but surprisingly effective for text classification tasks.
 
-3. Real-World Use: This is the kind of thing you’d see in email systems to filter out spam automatically, so you don’t have to wade through all that junk.
+**3. Real-World Use**: This is the kind of thing you’d see in email systems to filter out spam automatically, so you don’t have to wade through all that junk.
 
 ### Final Thought:
 So, to sum it up: the program trains a machine learning model to classify emails, saves that model, and then lets you interact with it to classify new emails. It’s efficient, easy to set up, and can be applied to many other kinds of text classification tasks, like detecting sentiment in reviews or categorizing news articles.
@@ -216,13 +216,13 @@ This is the entry point to the program. When the script is run, it calls the mai
 
 ### Final Flow:
 
-#### User Interaction:
+#### i. User Interaction:
 
 The user enters email content manually or uploads a file with multiple emails.
 
 They click the "Classify Email" button to get a spam/ham prediction for the email content or emails in the file.
 
-#### Model Prediction:
+#### ii. Model Prediction:
 
 The app uses the pre-trained Naive Bayes model to classify each email and shows the result (either spam or ham) on the web interface.
 
@@ -238,10 +238,10 @@ The app will predict the classification of each email and display the result to 
 ![Screenshot 2025-01-22 205931](https://github.com/user-attachments/assets/26ace7e6-a99e-4c52-b4fb-5b58763c24ff)
 
 # RESULT:
-i.Accuracy: 98.5% — The model is doing a great job, correctly predicting spam and ham emails almost 99% of the time.
+**i.Accuracy**: 98.5% — The model is doing a great job, correctly predicting spam and ham emails almost 99% of the time.
 
-ii.Confusion Matrix: The majority of spam emails are correctly identified as spam, and most ham emails are accurately classified as ham.
+**ii.Confusion Matrix**: The majority of spam emails are correctly identified as spam, and most ham emails are accurately classified as ham.
 
-iii.Classification Report: Precision and recall for both spam and ham are high, with the model's F1-scores reflecting its solid performance in both categories.
+**iii.Classification Report**: Precision and recall for both spam and ham are high, with the model's F1-scores reflecting its solid performance in both categories.
 
 This is the basic result you’d get when you run the classifier and evaluate it on a dataset. It's a strong result if you’re working with real-world email data—98.5% accuracy is a good performance for spam classification!
