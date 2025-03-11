@@ -91,13 +91,13 @@ import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 ```
 
-Streamlit (st): Used to create the web interface for the application.
+**Streamlit (st)**: Used to create the web interface for the application.
 
-joblib: Used to load the pre-trained model and vectorizer from disk.
+**joblib**: Used to load the pre-trained model and vectorizer from disk.
 
-pandas: Helps in handling and reading CSV files (in case users upload email datasets).
+**pandas**: Helps in handling and reading CSV files (in case users upload email datasets).
 
-CountVectorizer: From scikit-learn, used to convert text data into a format the machine learning model can understand (i.e., numerical vectors).
+**CountVectorizer**: From scikit-learn, used to convert text data into a format the machine learning model can understand (i.e., numerical vectors).
 
 ### 2. Load the Pre-trained Model and Vectorizer
 ```
@@ -107,11 +107,11 @@ def load_model_and_vectorizer():
     return model, vectorizer
 ```
 
-load_model_and_vectorizer: This function loads the pre-trained Naive Bayes model and vectorizer from disk using joblib.
+**load_model_and_vectorizer**: This function loads the pre-trained Naive Bayes model and vectorizer from disk using joblib.
 
-spam_classifier_model.pkl: The trained Naive Bayes model.
+**spam_classifier_model.pkl**: The trained Naive Bayes model.
 
-vectorizer.pkl: The vectorizer used during training (usually a CountVectorizer that converts email text into numerical features).
+**vectorizer.pkl**: The vectorizer used during training (usually a CountVectorizer that converts email text into numerical features).
 
 ### 3. Classify a Single Email
 ```
@@ -121,7 +121,7 @@ def classify_email(model, vectorizer, email_content):
     return prediction[0]
 ```
 
-classify_email:
+**classify_email:**
 
 This function takes the email content, converts it into numerical vectors using the vectorizer, and then passes it to the model to predict whether the email is spam or ham.
 
@@ -147,7 +147,7 @@ The Streamlit UI starts with setting a title for the page and provides a brief d
 email_content = st.text_area("Enter the email content here:")
 ```
 
-st.text_area: This is a text area widget in Streamlit that allows the user to enter the content of an email for classification.
+**st.text_area**: This is a text area widget in Streamlit that allows the user to enter the content of an email for classification.
 
 Users can type or paste an email's content into this text box.
 
@@ -164,17 +164,17 @@ if st.button("Classify Email"):
         st.write("Please enter some email content to classify.")
 ```
 
-st.button("Classify Email"): This creates a button that the user can click to classify the email.
+**st.button("Classify Email")**: This creates a button that the user can click to classify the email.
 
 When the button is clicked, the app:
 
-1. Checks if the user has entered email content.
+**1.** Checks if the user has entered email content.
 
-2. If content is provided, it calls classify_email with the model and vectorizer to predict the email's classification.
+**2.** If content is provided, it calls classify_email with the model and vectorizer to predict the email's classification.
   
-3. The result is displayed to the user, telling them if the email is spam or ham.
+**3.** The result is displayed to the user, telling them if the email is spam or ham.
 
-4. If no content is entered, the app asks the user to provide email content.
+**4.** If no content is entered, the app asks the user to provide email content.
 
 ### 7. File Upload Option
 ```
@@ -194,17 +194,17 @@ if uploaded_file is not None:
         st.write("Uploaded file does not contain a 'Message' column.")
 ```
 
-st.file_uploader: This creates a file upload button that allows users to upload a CSV file. The file must be in CSV format, and it is assumed that the emails are contained in a column named Message.
+**st.file_uploader**: This creates a file upload button that allows users to upload a CSV file. The file must be in CSV format, and it is assumed that the emails are contained in a column named Message.
 
 After the user uploads a file:
 
-1. The app reads the file into a pandas DataFrame using pd.read_csv.
+**1.** The app reads the file into a pandas DataFrame using pd.read_csv.
 
-2. If the file contains a column named Message (which is expected to contain the email text), the app iterates through all emails in that column and classifies them as spam or ham.
+**2.** If the file contains a column named Message (which is expected to contain the email text), the app iterates through all emails in that column and classifies them as spam or ham.
 
-3. For each email, the app displays the content of the email and the classification result.
+**3.** For each email, the app displays the content of the email and the classification result.
 
-4. If the file doesn’t have a Message column, it shows a warning.
+**4.** If the file doesn’t have a Message column, it shows a warning.
 
 ### 8. Running the App
 ```
